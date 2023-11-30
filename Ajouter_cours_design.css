@@ -1,0 +1,49 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url('img/backg.jpg');
+}
+
+fieldset{
+    margin-top: 280px;
+    width: 20%;
+    background-color: #2e2c30;
+    box-shadow: 5px 5px 20px 1px 10px rgb(85,85,85);
+    border: 0px;
+    padding-left: 10px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    height: 220px;
+}
+
+td{letter-spacing: 1px;}
+h1{
+    font-family: andalus;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+}
+hr{
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 40%;
+}
+
+#BtnAjouter{
+    margin: 20px 15px;
+    color: #357bc0;
+    background-color: white;
+    width: 80%;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+input{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    width: 100%;
+}

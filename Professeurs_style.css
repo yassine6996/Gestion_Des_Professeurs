@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+     list-style: none;
+}
+
+h1,h2 {
+    color: #444;
+}
+
+h3{
+    color: rgba(134, 46, 46, 0.6);
+}
+
+.btn{
+    background: #f05462;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.btn:hover{
+    color: #f05462;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #f05462;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+table{
+    padding: 10px;
+}
+
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+.side-menu {
+    position: fixed;
+    background: #f05462;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .brand-menu {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu li:hover {
+    background: white;
+    color: #f05462;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.container .header .title .h1{
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.container .content {
+    position: relative;
+    margin-top: 20vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+
+.container .content .button {
+    position: relative;
+    text-align: center;
+}
+
+.container .content  .professeur {
+    min-height: 1vh;
+    flex: 5;
+    background: white;
+    margin: 0 15px 15px 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content  .professeur .table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: monospace;
+    text-align: center;
+    border-color: black;
+    
+}
+.container .content  .professeur .table .tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+.container .content  .professeur .table .tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.015);
+    
+}
+.container .content  .professeur .table .tr .th{
+    background-color: aqua;
+    text-align: center;
+    padding: 10px 6px;
+}
+
+
+
+.container .content  .professeur .table .tr .td {
+    padding: 12px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1050px){
+    .side-menu li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .side-menu li span{
+        display: none;
+    }
+    .side-menu{
+        align-items: center;
+    }
+    .side-menu li img{
+        width: 40px;
+        height: 40px;
+    }
+    .side-menu li:hover{
+        background: #f05462;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+
+@media screen and (max-width: 536px){
+    .brand-menu h1{
+        font-size: 16px;
+    }
+    .container .content .cards{
+        justify-content: center;
+    }
+    .side-menu li img{
+        width: 30px;
+        height: 30px;
+    }
+    .container .content .content-2 .professeur table th:nth-child(2),
+    .container .content .content-2 .professeur table td:nth-child(2){
+        display: none;
+    }
+}
